@@ -1,0 +1,162 @@
+int plus = 13;
+int minus = 12;
+int of = 0;
+int a = 4;
+int b = 5;
+int c = 8;
+int d = 7;
+int e = 6;
+int f = 2;
+int g = 3;
+  
+  void setup() {
+   pinMode(plus, INPUT);
+   pinMode(minus, INPUT);
+   pinMode(a, OUTPUT);
+   pinMode(b, OUTPUT);
+   pinMode(c, OUTPUT);
+   pinMode(d, OUTPUT);
+   pinMode(e, OUTPUT);
+   pinMode(f, OUTPUT);
+   pinMode(g, OUTPUT);
+  }
+
+void loop()
+{
+  if(digitalRead(plus) == HIGH)
+  {
+    of = of + 1;
+    delay(300);
+  }
+    if(digitalRead(minus) == HIGH)
+      {
+        of = of - 1;
+      delay(300);
+      }
+  if(of == 10)
+  {
+    of = 0;
+  }
+  
+  if(of == -1)
+  {
+    of = 9;
+  }
+  
+        
+          if(of == 1){
+            digitalWrite(5, HIGH);
+            digitalWrite(8, HIGH);
+            digitalWrite(7, LOW);
+            digitalWrite(6, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(2, LOW);
+            digitalWrite(9, LOW);}
+  
+      if(of == 2){
+        digitalWrite(4, HIGH);
+        digitalWrite(5, HIGH);
+        digitalWrite(3, LOW);
+        digitalWrite(6, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(2, HIGH);
+        digitalWrite(8, LOW);
+        digitalWrite(9, LOW);
+        
+      }
+  
+      if(of == 3){
+        digitalWrite(4, HIGH);
+        digitalWrite(5, HIGH);
+        digitalWrite(3, LOW);
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(2, HIGH);
+        digitalWrite(6, LOW);
+        digitalWrite(9, LOW);
+      }
+  if(of == 4)
+  {
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+  
+  if(of == 5)
+    {
+        digitalWrite(4, HIGH);
+        digitalWrite(5, LOW);
+        digitalWrite(3, HIGH);
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(2, HIGH);
+        digitalWrite(6, LOW);
+        digitalWrite(9, LOW);
+  }
+  
+  if(of == 6)
+    {
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+  
+  if(of == 7)
+    {
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+  
+  if(of == 8)
+    {
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+  
+  if(of == 9)
+    {
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+  if(of == 0)
+    {
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, LOW);
+  }
+}
+                     
