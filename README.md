@@ -2,5 +2,5 @@ follow exact instructions:
 use an aduino setup and
 copy this wiring.
 <img width="874" height="445" alt="Screenshot 2026-03-26 at 10 13 26 p m" src="https://github.com/user-attachments/assets/35c69cee-9667-49ad-b84d-520d418ef163" />
-then put the code in.
-enjoy.
+
+this is very important: the 2 resistors on top are 10 komega and all others are 200 omega. if you don't do this, your aduino device will fry if you do use it.
